@@ -28,6 +28,7 @@ export declare const Format: {
     regex: string;
     uri: string;
     uuid: string;
+    file: string;
 };
 export declare class JsonSchemaBuilder {
     schema: JsonSchema;
@@ -166,6 +167,13 @@ export declare class JsonSchemaBuilder {
      * @returns
      */
     'enum'(values: any[]): this;
+    /**
+     * Enumeration titles the acceptable values
+     *
+     * @param values
+     * @returns
+     */
+    'enumNames'(values: any[]): this;
     /**
      * Sets the type of the schema
      */

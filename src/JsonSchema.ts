@@ -103,6 +103,7 @@ export interface JsonSchema {
    * Enumerates the values that this schema can be (e.g. {"type": "string", "enum": ["red", "green", "blue"]})
    */
   'enum'?: any[];
+  'enumNames'?: any[];
   /**
    * The basic type of this schema, can be one of [string, number, object, array, boolean, null] or an array of
    * the acceptable types

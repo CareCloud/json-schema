@@ -32,6 +32,7 @@ export const Format = {
   regex: 'regex',
   uri: 'uri',
   uuid: 'uuid',
+  file: 'data-uri'
 }
 
 export class JsonSchemaBuilder {
@@ -316,6 +317,17 @@ export class JsonSchemaBuilder {
    */
   'enum'(values: any[]) {
     this.schema.enum = values;
+    return this;
+  }
+
+  /**
+   * Enumeration titles the acceptable values
+   *
+   * @param values
+   * @returns
+   */
+  'enumNames'(values: any[]) {
+    this.schema.enumNames = values;
     return this;
   }
 
